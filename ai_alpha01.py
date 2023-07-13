@@ -2,23 +2,30 @@ import time
 import os
 import random
 
+#testing program for memory files and how they interact
+#The files are created in this version next versions might not have this feature
+#Instead files will be prewrote as a folder
+#This is just a schematic of what the main program will look like
+
 print("Intializing Program...")
 #Functions and Variables Go Here
 user_files = []
-if os.path.exists("memory_1.txt") == False:
-    memory1 = open("memory_1.txt","x")
+if os.path.exists("greetings.txt") is False:
+    memory1 = open("greetings.txt","x")
 else:
-    continue
-if os.path.exists("memory_2.txt") == False:
-    memory2 = open("memory_2.txt","x")
+    pass
+if os.path.exists("greetings_responses_1.txt") is False:
+    memory2 = open("greetings_responses_1.txt","x")
 else:
-    continue
-    
+    pass
+
 def respond(x):
-    memory1 = open("memory_1.txt","r")
+    memory1 = open("greetings.txt","r")
     memory1_contents = memory1.read()
     if x in memory1_contents:
-        print(memory_2)
+       respond = open("greetings_responses.txt","r")
+       content = respond.readlines()
+       print(content[0])
     
 #Functions and Variables Ends Here
 

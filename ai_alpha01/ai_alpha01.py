@@ -7,7 +7,7 @@ import random
 #Instead files will be prewrote as a folder
 #This is just a schematic of what the main program will look like
 
-print("Intializing Program...")
+print("Intializing Program...") #I REALLY LIKE THIS PART SO GONNA ADD
 #Functions and Variables Go Here
 user_files = []
 if os.path.exists("greetings.txt") is False:
@@ -25,7 +25,7 @@ def respond(x):
     if x in memory1_contents:
        respond = open("greetings_responses.txt","r")
        content = respond.readlines()
-       print(content[0])
+       print(content[0]) #will print line 1, 0+1=1
     
 #Functions and Variables Ends Here
 

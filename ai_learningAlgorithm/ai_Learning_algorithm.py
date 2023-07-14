@@ -1,7 +1,7 @@
 #ai learning algorithm
 #will add new command/keyword
 #need to create a method that can determine if a string is equal to a certain phrase like hi=greeting
-danger_class = ["help", "me", "9", "oh no","1"]
+danger_class = ["h","l","p", "m","e", "9", "oh no","1"]
 cmd_class = ["/", "&", "!"]
 greet_class = ["h","H","i","I","e","l","o","y"]
 big_list = [greet_class, cmd_class, danger_class]
@@ -28,6 +28,8 @@ def classify(z):
     if classification is True:
         z = "greeting"
 #NEW classify program beta0.1
+'''requires input to be one big string NO SPACES'''
+
 def classify2(uinput):
     uinput_list = []
     uinput_list[:0] = uinput
@@ -44,4 +46,4 @@ def learn(lesson, type):
         memory = open("greetings.txt", "a")
         memory.write(lesson)
 
-classify2("911")
+classify2("oh no")
